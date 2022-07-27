@@ -5,13 +5,6 @@ defmodule FizzbuzzProject do
     |> handle_file_read()
   end
 
-  #  defp handle_file_read({:ok, result}) do
-  #   list = String.split(result, ",")
-  #   Enum.map(list, fn number -> String.to_integer(number) end)
-  #  end
-
-  #  defp handle_file_read({:error, reason}), do: reason
-
   defp handle_file_read({:ok, result}) do
     result =
       result
